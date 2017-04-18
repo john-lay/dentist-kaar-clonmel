@@ -1,0 +1,147 @@
+.navbar {
+	border-color: #5a5a5a !important;
+}
+
+.container.header {
+	margin-top: 1em;
+}
+
+.home-icon {
+	font-size: 1.3em;
+	padding-bottom: 0.5em;
+}
+
+.carousel-caption {
+	color: #5a5a5a;
+	text-shadow: none;
+}
+
+.nav a:hover {
+	background-color: #428bca !important;
+	color: #ffffff !important;
+	border-color: #357ebd !important;
+}
+
+.sub-heading-text {
+	line-height: 2em;
+}
+
+.opening-day {
+	font-weight: normal;
+}
+
+h1.main-heading {
+	border-bottom: 1px solid #428bca;
+}
+
+.main-container {
+	min-height: 580px;
+}
+
+footer {
+	margin-top: 2em;
+	margin-bottom: -2em;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th,
+.panel-default .panel-heading,
+.panel-footer ,
+.well {
+	background-color: #e3e3e3;
+}
+
+.table-hover > tbody > tr > td:hover,
+.table-hover > tbody > tr > th:hover,
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th{
+	background-color: #cccccc;
+}
+
+span.asterisk {
+	color: red;
+	font-weight: bold;
+}
+
+p.address {
+	font-size: 1.8em;
+	line-height: 1.5em;
+}
+
+p.directions {
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+.panel-default {
+	border-color: #428bca !important;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media(max-width:767px){
+	.title h1 {
+		color: green !important;
+	}
+	
+ 	.container.header div{
+		display: auto;
+	}
+	
+	#header-logo img{
+		display: none;
+	}
+	
+	#header-title {
+		margin: 0 auto;
+	}
+	
+	#header-address {
+		display: none;
+	}
+}
+@media(min-width:768px){
+	.title h1 {
+		color: blue !important;
+	}
+	
+	.container.header div{
+		display: inline-block;
+		margin: 0 auto;
+	}
+	
+	#index-nav {
+		width: 750px;
+	}
+	
+	#header-logo img{
+		display: table-cell;
+		vertical-align: top;
+	}
+	
+	.navbar-nav li a{ 
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
+@media(min-width:992px){
+	.container.header div{
+		display: block;
+	}
+	
+	#header-logo img{
+		display: inline-block;
+	}
+	
+	.navbar-nav li a{ 
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	#index-nav {
+		width: auto;
+	}
+}
+@media(min-width:1200px){
+	/*  */
+}

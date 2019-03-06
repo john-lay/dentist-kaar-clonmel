@@ -77,6 +77,13 @@ p.directions {
 	border-color: #428bca !important;
 }
 
+#NotificationModal {
+	top: 10%;
+}
+#NotificationModal .modal-body {
+	font-size: 1.6rem;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media(max-width:767px){

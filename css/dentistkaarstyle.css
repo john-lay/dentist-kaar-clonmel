@@ -84,6 +84,17 @@ p.directions {
 	font-size: 1.6rem;
 }
 
+#PrivateFees .heading {
+    font-weight: bold;
+}
+
+#PrivateFees td {
+    width: 50%;
+}
+#PrivateFees tr.divider {
+    border-bottom: 2px solid #428bca;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media(max-width:767px){

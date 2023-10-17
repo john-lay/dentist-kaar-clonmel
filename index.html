@@ -140,17 +140,6 @@
     </div><!-- /.carousel -->
     <div class="container">
         <div class="col-lg-8 col-lg-offset-2 text-justify">
-            <h2 class="text-center">Charity Raffle</h2>
-            <p>Dr Kaar's children are tackling the Galley Head charity swim swim to fundraise for <b>Marymount University Hospital and Hospice</b>, <b>CoAction West Cork</b> and <b>Cancer Connect</b>.</p>
-            <p>To show appreciation to their kind supporters they've decided to raffle a wonderful oil painting titled "<i>Owenahincha After the Storm</i>".</p>
-            <p>To be in with a chance of winning, we ask you to kindly donate on their <a href="https://www.idonate.ie/fundraiser/11465074_3-littler-pigs-s-fundraising-page.html" target="_blank">idonate page</a>.</p>
-            <p>The winner will be announced on <b>Thursday 20th July</b> and randomly selected from the names of donors.</p>
-            <p>We encourage everyone to share the details through their own socials as well - please spread the word!</p>
-            <p>A big thank you from all of us.</p>
-            <img src="images/after-the-storm.jpg" width="100%" />
-            <br />
-        </div>
-        <div class="col-lg-8 col-lg-offset-2 text-justify">
             <h2 class="text-center">Open Letter Update</h2>
             <p>I would to say <i>"Thank You"</i> for your loyalty and support to Dee, my staff and myself over the last 33 years at Western Dental Surgery.</p>
             <p>It is with regret that I must tell you that I am no longer able to practice due to ill health.</p>
@@ -249,7 +238,7 @@
             </a>
         </footer>
     </div>
-    <!-- Modal - private dental hospital -->
+    <!-- Modal -->
     <div class="modal fade" id="NotificationModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -262,27 +251,6 @@
                     <p>Please be advised that this is a private dental surgery.</p>
                     <p>The public HSE dental clinic can be found at <strong>Clonmel Community Care
                             Centre</strong><br />in the grounds of the South Tipperary General Hospital.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal - galley head swim -->
-    <div class="modal fade" id="GalleyHeadSwimModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                    <h3 class="modal-title">Charity Raffle</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Dr Kaar's children are tackling the Galley Head charity swim swim to fundraise for <b>Marymount University Hospital and Hospice</b>, <b>CoAction West Cork</b> and <b>Cancer Connect</b>.</p>
-                    <p>To show appreciation to their kind supporters they've decided to raffle a wonderful oil painting titled "<i>Owenahincha After the Storm</i>".</p>
-                    <p>To be in with a chance of winning, we ask you to kindly donate on their <a href="https://www.idonate.ie/fundraiser/11465074_3-littler-pigs-s-fundraising-page.html" target="_blank">idonate page</a>.</p>
-                    <p>The winner will be announced on <b>Thursday 20th July</b> and randomly selected from the names of donors.</p>
-                    <p>We encourage everyone to share the details through their own socials as well - please spread the word!</p>
-                    <p>A big thank you from all of us.</p>
-                    <img src="images/after-the-storm.jpg" width="100%" />
                 </div>
             </div>
         </div>
@@ -318,16 +286,10 @@
             $("#celebrating").html(yearsOpen + suffix);
             $(".this-year").html(new Date().getFullYear());
 
-            // // show the notification pop-up if this is the first time on the website.
-            // if (typeof Cookies.get('notification') == 'undefined') {
-            //     $("#NotificationModal").modal();
-            //     Cookies.set('notification', 1, { expires: 365 });
-            // }
-            
-            // show the galley head pop-up if this is the first time on the website.
-            if (typeof Cookies.get('galleyhead') == 'undefined') {
-                $("#GalleyHeadSwimModal").modal();
-                Cookies.set('galleyhead', 1, { expires: 365 });
+            // show the notification pop-up if this is the first time on the website.
+            if (typeof Cookies.get('notification') == 'undefined') {
+                $("#NotificationModal").modal();
+                Cookies.set('notification', 1, { expires: 365 });
             }
         });
     </script>

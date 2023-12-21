@@ -84,10 +84,10 @@
                 <img src="images/practice.png" alt="Dental Pracice">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Christmas 2022 Opening Hours</h1>
-                        <p>Open all week in the run up to Christmas, finishing on Friday 23rd at 5pm</p>
-                        <p>Open 28th, 29th and 30th December</p>
-                        <p>Returning Tuesday 3rd of January</p>
+                        <h1>Christmas 2023 Opening Hours</h1>
+                        <p>Open all week in the run up to Christmas, finishing on Friday 22nd at 4pm</p>
+                        <p>Open 28th and 29th December</p>
+                        <p>Returning Tuesday 2nd January</p>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,6 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Welcome to the Dental Surgery</h1>
-                        <p>We are currently celebrating our <span id="celebrating">28th</span> year at the practice!</p>
                         <p><a class="btn btn-lg btn-primary" href="findus.html" role="button">Find Us</a></p>
                     </div>
                 </div>
@@ -141,14 +140,18 @@
     </div><!-- /.carousel -->
     <div class="container">
         <div class="col-lg-8 col-lg-offset-2 text-justify">
-            <h2 class="text-center">Open Letter Update</h2>
-            <p>I would to say <i>"Thank You"</i> for your loyalty and support to Dee, my staff and myself over the last 33 years at Western Dental Surgery.</p>
-            <p>It is with regret that I must tell you that I am no longer able to practice due to ill health.</p>
-            <p>Doctor Connor Slattery has been working at Western Dental for the past two years and he will be pleased to look after your dental care, if you wish.</p>
-            <p>With every best wish for the future and thank you again for your kind support.</p>
+            <h2 class="text-center">Open Letter Update (December 2023)</h2>
+            <p>Once again, I would like to say a big "Thank You" for your support, loyalty and trust over the past 33 years in dental practice at the Western Road.</p>
+            <p>As you are aware, Dee and I have had to step back from practice for the last year and left the practice in the capable hands of Connor Slattery.</p>
+            <p>We have now handed the practice over to Aditya Vikram of Ava Dental who will take over on the 3rd January 2024.</p>
+            <p>Connor Slattery is remaining on at the practice and all previous arangements with Connor still continue.</p>
+            <p>Aditya Vikram is very highly qualified and will be accepting patients and referrals for treatment from the 3rd January 2024. Please see Aditya's professional biography in the <a href="about.html" target="_self">Profiles section</a> of the website.</p>
+            <p>We are happy to recommend existing patients and "new" patients to Aditya.</p>
+            <p>Appointments with Connor Slattery may be arranged in the usual way by telephone: 052 6121784 or initial contact via the website: <a href="mailto:westerndental@eircom.net" target="_blank">westerndental@eircom.net</a></p>
+            <p>Please contact Agnieszka @ 052 6121784 if you have any queries about these arrangements.</p>
+            <p>Dee and I wish you all the best for the future and with your ongoing dental care.</p>
             <br />
-            <p>Yours sincerely,</p>
-            <p>Gerry Kaar</p>
+            <p>Gerry and Dee</p>
         </div>
         <div class="col-lg-8 col-lg-offset-2 text-justify">
             <h2 class="text-center">Covid-19 Safety Guidelines</h2>
@@ -265,26 +268,6 @@
             var day = new Date().getDay() + 1;
             $("#OpeningDays li:nth-child(" + day + ")").addClass("active");
 
-            var openingYear = 1988;
-            var yearsOpen = new Date().getFullYear() - openingYear;
-            var celebrating = yearsOpen.toString().split("");
-            var suffix = "";
-
-            switch (celebrating[1]) {
-                case "1":
-                    suffix = "st";
-                    break;
-                case "2":
-                    suffix = "nd";
-                    break;
-                case "3":
-                    suffix = "rd";
-                    break;
-                default:
-                    suffix = "th";
-            }
-
-            $("#celebrating").html(yearsOpen + suffix);
             $(".this-year").html(new Date().getFullYear());
 
             // show the notification pop-up if this is the first time on the website.
